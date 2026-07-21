@@ -5,7 +5,26 @@ from pathlib import Path
 image = Path(sys.argv[1])
 format = sys.argv[2]
 
-img_formats = ["png", ]
+img_formats = [
+    "png",
+    "jpg",
+    "jpeg",
+    "webp",
+    "gif",
+    "bmp",
+    "tiff",
+    "tif",
+    "ico",
+    "ppm",
+    "pgm",
+    "pbm",
+    "pnm",
+    "dds",
+    "tga",
+    "heif",
+    "heic",
+    "avif",
+]
 
 if format in img_formats:
     if len(sys.argv) != 3:
